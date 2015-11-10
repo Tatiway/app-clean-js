@@ -1,0 +1,594 @@
+@import "bourbon"
+
+@import "_var.sass"
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+//Custom Styles Here
+//template for section All
+.homesect
+	padding-top:70px
+	background-color: #f9f9f9
+	position: relative
+	.section-head
+		margin-bottom: 80px
+		p
+			margin-top: 60px
+			text-align: center
+		a
+			font-family: "RalewayBold", $helvetica
+			&:hover
+				text-decoration: none
+		h2
+			text-align: center
+			position: relative
+			&::after
+				position:absolute
+				content:''
+				height: 4px
+				width: 165px
+				background-color: $main-color
+				display: block
+				bottom:-30px
+				left: 50%
+				transform: translate(-50%,0)
+		h3
+			text-align: center
+			margin-top:60px
+			a
+				font-family: "PFCentroSlabProMedium", $helvetica
+				&:hover
+					text-decoration: none
+	.section-bottom
+		padding:58px 0 48px
+		text-align: center
+		background-color: #e5e5e5
+	&::before
+		content:""
+		height: 6px
+		width: 100%
+		background-image:url(img/bah_1.png)
+		position:absolute
+		top:-6px
+		z-index: 3
+//template for section All - end
+
+//section_1		
+.section_1
+	.section-content
+		background-image: url("img/s1_gray_bg.png")
+		background-repeat: no-repeat
+		background-position: top
+	.section-bottom
+		background-color:#2c3949
+
+.section-content 
+	position:relative
+	padding-bottom:90px
+
+	.s1-bottom-triangle
+		height:90px
+		position:absolute
+		bottom:0
+		background-image: url("img/s1_triangle.svg")
+		z-index: 3
+		width: 100%
+		background-position: top
+		background-size:100% 100%
+		text-align: center
+		.triangle-logo
+			width: 116px
+			margin-top: 30px
+			opacity: .25
+.scales
+	width:160px
+	position:absolute
+	top:-130px
+	left:50%
+	transform:translate(-50%,0)
+	z-index:-1
+
+.s1-bottom
+	padding:15px 0 65px
+	background-color: #394b5f
+	.info-item
+		margin:15px 0 0 
+		p
+			color:#dadde0
+			border-color:#546476
+	.info-item-wrap:nth-child(2)
+		.info-item
+			margin-top:40px
+
+
+// template for Items All
+.info-item
+	padding-left:34px
+	max-width:320px
+	line-height:em(18px)
+	margin:40px 0
+	transition: all 1s ease
+	&-off
+		opacity: 0
+	//min-height:120px
+	h4
+		margin-top:0
+		margin-bottom:10px 
+		a
+			font-size: em(24px)
+			line-height:em(20px)
+			text-transform: none
+	p
+		font-size: em(16px)
+		border-bottom:1px solid #dadde0
+		padding-bottom:20px
+
+// template for Items All - end
+
+
+.info-item-wrap:nth-child(2)
+	.info-item
+		margin-top:0
+
+
+// section_2
+
+
+.s2-items
+	padding-bottom:25px
+	a
+		color: #111
+		&:hover
+			text-decoration: none
+	.s2_item
+		text-align: center
+		margin-bottom: 75px
+		display: block
+		>span
+			display: block
+		&-text
+			font-family: "RalewayBold",$helvetica
+			font-size: em(14px)
+			line-height: em(19px)
+		
+
+	.img-wrap
+		padding-bottom:30px
+		margin-bottom: 12px
+		display:block
+		position:relative
+		&::after
+			content:" "
+			position:absolute
+			bottom:0
+			height: 1px
+			width:58px
+			background-color: $main-color
+			display: block
+			margin-top:36px
+			transform: translate(-50%,0)
+			left: 50%
+		img
+			max-width: 85px
+			//max-height: 75px
+			height: 75px
+
+.s2-items-container
+	text-align:center
+
+.s2-item-wrap
+	display:inline-block
+	width:185px
+	padding:0 15px
+	overflow:hidden
+	transition: all .6s ease
+	&-off
+			opacity: 0
+
+	
+
+// section _3
+
+.s_dark
+	background-color:#2c3949
+	&:before
+		background-image:url("img/bah_2.png")
+	.section-head
+		h2
+			color:#fff
+		p
+			color:#fff
+	.section-bottom
+		background-color:#394b5f
+
+.section_3
+	.section-head
+		margin-bottom: 30px
+	.section-content
+		background-image:url("img/s3_sun_bg.png")
+		background-repeat: no-repeat
+		background-position: top
+		min-height: 850px
+		padding-bottom:0
+		padding-top:50px
+		.info-item
+			margin-top: 80px
+			p
+				color:#fff
+				border-bottom:none
+	.section-bottom
+		margin-top:20px
+	
+
+	.info-item-wrap
+		&:nth-child(2)
+			.info-item
+				margin-top:0px
+		&:nth-child(4), &:nth-child(6)
+			.info-item
+				margin-top: 50px
+		&:nth-child(8)
+			.info-item
+				margin-top: 170px
+		&:nth-child(1), &:nth-child(7)
+			.info-item
+				margin-left: 82px
+		&:nth-child(3), &:nth-child(9)
+			.info-item
+				margin-left: -40px
+		&:nth-child(6)
+			.info-item
+				margin-left: 30px
+
+.s3-img-wrap
+	width:134px
+	height:134px
+	background-color: $main-color
+	text-align:center
+	border-radius:10em
+	margin:45px 0 0 114px
+	position:absolute
+	img
+		width: 70px
+		margin-top:30px
+
+//section _ 4
+ 	
+.s_grey
+	background-color:#e5e5e5
+	&:before
+		background-image:url("img/bah_3.png")
+	.section-head
+		h2
+			color:#2c3949
+		h3
+			color:#394b5f
+		p
+			color:#333333
+
+.section_4
+	.section-bottom
+		background-color:#d6d6d6
+
+//tmplate for card
+// .section-pb
+// 	margin-bottom: 58px	
+
+.cards
+	text-align:center
+	perspective:600px
+	.card
+		&-off
+			transform:rotateY(100deg)
+			opacity: 0
+		transition: all 1s ease
+		width: 260px
+		display: inline-block
+		background-color:#2c3949
+		margin:0 0 12px 12px
+		color:#97a4b2
+		font-size: em(16px)
+		line-height: em(22px)
+		padding:55px 25px 48px
+		vertical-align: top
+		//overflow: hidden
+		//min-height: 363px
+		h4
+			color: #e5e5e5
+			font-family: "RalewayBold", $helvetica
+			font-size: em(18px)
+			margin-top:30px
+		p
+			margin-bottom: 0
+			height: 70px
+			strong
+				color: $main-color
+		.card-icon
+			width: 120px
+			height: 120px
+			line-height: 120px
+			display: inline-block
+			background-color: $main-color
+			border-radius:10em
+			img
+				width: 75px
+			
+// section_5
+
+.triangles-container
+	color:#fff
+	font-family:"PFCentroSlabProMedium", $helvetica
+	font-size:em(18px)
+	margin:30px 0 70px
+	text-align:center
+	//&:hover
+		//text-decoration:underline
+	.tc-item
+		width: 290px
+		height:128px
+		// background-color:$main-color
+		display: inline-block
+		position:relative
+		margin-left: -40px
+		vertical-align: top
+		transition: all 1s ease
+		&:first-child
+			margin-left: 0
+			.tc-content
+				margin-left: 40px
+		&-off
+			opacity: 0
+		&:hover
+			transform: scale(1.08)
+			z-index: 3
+			path
+				fill-opacity:0 !important
+				stroke-opacity: 1!important 
+		svg
+			position:absolute
+			top:0
+			left:0
+			z-index: 0
+		.tc-content
+			position:relative
+			z-index: 1
+			margin-top:45px
+			margin-left:65px
+			text-align: left
+			padding-right:15px
+			span
+				font-size: em(22px)
+			img
+				height: 40px
+				float:left
+				margin-right: 18px
+
+
+// section_6
+
+.teams 
+	@extend .cards
+	margin-bottom:80px
+	.team 
+		@extend .card
+		background-color:#e5e5e5
+		line-height: em(18px)
+		&:hover
+			border-bottom:3px solid $main-color
+		h4
+			color: #333
+			text-transform: none
+			margin-top: 35px
+			margin-bottom: 10px
+		p
+			height: auto
+			font-size:em(15px) 
+			color:#6e7b8b
+		.team-phone
+			margin-top: 25px
+			font-family: "RobotoBold", $helvetica
+			color:#333
+			font-size: em(18px)
+		.card-icon
+			overflow: hidden
+			line-height: 0
+			box-shadow:0 0 0 4px  #d6d6d6
+			background-color:#d6d6d6
+			img
+				width:100%
+
+
+//section_7
+
+.slider
+	width:920px
+	margin:0 auto
+	//outline:1px solid green
+	position:relative
+	.slide
+		position:relative
+		width: 920px
+		padding-bottom:130px
+		//border:10px solid #ccc
+		overflow: hidden
+		.sliders
+			width: 99999px
+			transition: margin-left .9s ease
+			//outline:1px solid green
+			.slide-items
+				vertical-align: top
+				text-align: center
+				//outline:1px solid red
+				position: relative;
+				display: inline-block
+				width: 920px
+				//height: auto
+				.img-wrap
+					width: 120px
+					height: 120px
+					border-radius:100%
+					border:5px solid $main-color
+					display:inline-block
+					overflow: hidden
+					img
+						width: 120px
+				h3
+					text-transform: none
+					color:#333
+					font-family: "RalewayBold", $helvetica
+					margin-bottom: 15px
+				.slide-descr
+					color: #6e7b8b
+					font-size: em(13px)
+					margin-bottom: 20px
+				p
+					padding:0 25px
+					display: inline-block
+					// height: 150px
+					// overflow: hidden
+	.arrow-wrap
+		width: 16px
+		height: 29px
+		background-image:url(img/slider_arrows.png)
+		overflow: hidden
+		position:absolute
+		top:200px
+		cursor: pointer
+		z-index: 1
+		&:hover
+			opacity: 0.5
+		// left: 0	
+	.ar_right
+		background-position:-16px 0
+		right: 0	
+	
+		
+// section_8	
+.homesect.section_8
+	padding-top: 80px
+	.forms
+		background-color:#ddd
+		color: #5e6267
+		h2
+			color:#2c3949
+		input
+			background-color:#c0c0c0
+			box-shadow: 0px -4px #737373
+	.section-pb
+		margin-bottom: 90px
+.s8-left
+ .section-head
+ 		margin-bottom: 40px
+ 		h2
+ 			margin-top:0
+ 			text-align: left
+ 			&::after
+ 				transform: none
+ 				left:0
+			p
+				text-align: left
+.s8-items
+	margin-bottom:20px
+	.s8-item
+		text-align: center
+		margin-bottom:30px
+		transition: all 1s ease
+		&:hover
+			transform: scale(1.08)
+			z-index: 3
+		.img-wrap
+			height: 72px
+			img
+				height: 72px
+		p
+			font-family: "RalewayBold", $helvetica
+			font-size: em(14px)
+			line-height: em(20px)
+
+
+//footer
+.main_footer
+	padding-bottom:70px	
+	.footer-content	
+		.logo
+			opacity: .35
+		.phone
+			opacity: .35
+		.main-mnu
+			a
+				color:#b7babe
+
+//pop-up
+.popup-box
+	position:absolute;
+	display:none;
+	z-index:9999999;
+	.forms
+		background-color:transparentize(#243343, 0)
+		
+.blackout 
+	background: rgba(0,0,0,0.5)
+	width:100%
+	height:100%
+	position: absolute
+	top: 0
+	overflow: hidden
+	z-index: 999999
+	left: 0
+	display: none
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ALWAYS END
+@import "_media.sass"
